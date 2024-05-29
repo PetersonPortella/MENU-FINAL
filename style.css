@@ -8,7 +8,8 @@
 body, html{
     color: aliceblue;
     height: 100%;
-    background: url(imagens2/fundo2.jpg) fixed 100%;
+    background: url(imagens2/fundo2.jpg) fixed no-repeat;
+    background-size: 100%;
    
 }
 
@@ -39,6 +40,7 @@ header{
 
  .logo{
     font-size: 40px;
+    text-decoration: none;
  }
 
  .logo span{
@@ -58,33 +60,39 @@ header{
     background-color: #2d8de6;
     padding: 10px 15px;
     border-radius: 10px;
+    transition: 1s;
  }
 
  li:hover{
    background-color : #111111;
  }
 
- .conteudo1{
-   border-radius: 170px;
-   width: 250px;
-   height: 250px;
-   background: #fff;
-   
+ p{
+   color: #111111;
+   font-size: 25px;
  }
 
- .conteudo2{
+ .conteudo1 {
   border-radius: 170px;
   width: 250px;
   height: 250px;
-  background: #fff;
-  
+  background: #ffffff;
+  animation: cores 9s linear infinite;
 }
 
-.conteudo3{
-  border-radius: 170px;
-  width: 250px;
-  height: 250px;
-  background: #fff;
+@keyframes cores {
+  0% {
+      background-color: #f3efd6;
+  }
+  33% {
+      background-color: #f7f8ad;
+  }
+  66% {
+      background-color: #2abfda;
+  }
+  100% {
+      background-color: #f3efd6;
+  }
 }
 
 
@@ -101,8 +109,7 @@ header{
 
  .div1{
 
-   width: 70%;
-   float: left;
+   width: 100%;
    font-size: 1.2em;
    padding-top: 70px;
    padding-left: 40px;
@@ -112,98 +119,51 @@ header{
 
  h1{
   text-align: center;
+  text-decoration: underline;
   
  }
 
- .div2{
-  
-   width: 25%;
-   float: right;
-   padding-top: 120px;
-   padding-right: 35px;
-   text-align: center;
-   color: aliceblue;
-   
-
- }
-
- h2{
-  width: 170px;
-  color:white;
-  font-size: 2em;
-  background: #111111;
-  margin: 0 auto;
-
- }
-
- button{
-  width: 170px;
-  color:white;
-  font-size: 1.4em;
-  background: #111111;
-  border-radius: 30px;
-  margin: 0 auto;
-
- }
-
- input{
-  color: #fff;
-  
- }
 
  .div3{
-   clear: both;
    padding-top: 100px;
    padding: 40px;
    padding-top: 100px; 
    text-align: center;
    background: #111111;
    border-radius: 20px;
+   font-size: 18px;
 
  }
 
  .div4{
-   clear: both;
-   padding-top: 100px;
-   text-align: center;
-   padding-bottom: 100px;
- }
+    width:100% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 120px;
+    margin: 70px 0;
 
- .div4 .frame1{
-   float: left;
-   padding-left: 120px;
-
-
- }
- .div4.frame2{
-  float: left;
- 
  }
 
  footer{
-   clear: both;
+   width: 100%;
    background: #111111;
-   height: 150px;
-   border: 2px solid black;
+   height: 190px;
    text-align: center;
    padding-top: 20px;
-   border-radius: 20px 20px 0 0;
-   
+   transition: 1s;
+   font-size: 20px;
  }
 
  footer a{
   padding: 5px 30px ;
-  text-decoration: none;
+  text-decoration: overline;
   color: #fff;
+  transition: 1s;
  }
 
  footer a:hover{
+  text-decoration: none;
   border-radius: 20px;
   background: #2d8de6;
  }
-
- 
-
- 
-
-
